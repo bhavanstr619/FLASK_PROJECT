@@ -1,0 +1,22 @@
+<html>
+      <head>
+            <title> UPDATE  </title>
+      </head>
+      <body>
+             <h1>  UPDATE TRAINER TASK </h1>
+             <from method ="post" action="/update/{{d.0}}">
+                   <table border="1" bgcolor="pink">
+                             <tr><td>ITV_ID: </td>
+                                 <td><input type="text" name="ITV_ID" value="{{d.1}}/"></tr></td>
+                             <tr><td>NAME: </td>
+                                 <td><input type="text" name="NAME" value="{{d.2}}/"></tr></td>
+                             <tr><td>EMAIL: </td>
+                                 <td><input type="text" name="EMAIL" value="{{d.3}}/"></tr></td>
+                             <tr><td>PHONE: </td>
+                                 <td><input type="text" name="PHONE" value="{{d.4}}/"></tr></td>
+                              <tr><td> </td>
+                                 <td><input type="submit" name="send" value="update"/></tr></td>
+                   </table>
+             </from>
+      </body>
+</html>

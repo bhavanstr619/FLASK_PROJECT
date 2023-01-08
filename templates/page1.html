@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>ITV CHENNAI</title>
+    </head>
+       <body bgcolor="PINK">
+                  <h1> ITV CHENNAI DASHBORD </h1>
+                  <br><br>
+                  <h1><a href="/form">CREATE TRAINER TASK</a><h1>
+               <table border="1.2"align="center" bgcolor="white">
+                  <tr>
+                      <th>ITV_ID</th>
+                      <th>NAME</th>
+                      <th>EMAIL</th>
+                      <th>PHONE</th>
+                      <th>EDIT</th>
+                      <th>DELETE</th>
+
+
+                  </tr>
+                   {%for x in d: %}
+                   <tr>
+                       <td>{{x.1}}</td>
+                       <td>{{x.2}}</td>
+                       <td>{{x.3}}</td>
+                       <td>{{x.4}}</td>
+                       <td><a href="/edit{{x.0}}">Edit</a></td>
+                       <td><a href="/delete{{x.0}}">Delete</a></td>
+                   </tr>
+                   {% endfor %}
+               </table>
+       </body>
+</html>
+
